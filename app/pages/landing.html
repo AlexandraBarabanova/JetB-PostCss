@@ -8,12 +8,423 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="wt-container">
-        <div class="wt-row wt-row_size_m wt-row_justify_center wt-offset-top-96">
-            <div class="wt-col-inline text-1 text-1_theme_dark">
-                    Landing page
+    <header class="header-color">
+        <div class="wt-container">
+            <div class="wt-row wt-row_size_m margin-left-1">
+                <div class="wt-col-2">
+                    <div class="logo">
+                        <img src="../static/img/logo.svg" width="80px">
+                    </div>
+                </div>
+                <div class="wt-col-auto-fill"></div>
+            </div>
+        </div>
+    </header>
+    <div class="wt-container main">
+        <div class="content-title">
+            <div class="wt-row wt-row_size_m wt-row_justify_center">
+                <div class="wt-col-12 show-lg">
+                    <img src="..\static\img\GameChanging_Development_Tools.svg">
+                </div>
+                <div class="wt-col-12 show-md-ide">
+                    <img class="title-img-chel" src="..\static\img\assets\gd_header_chel_mixed.svg">
+                    <img class="title-img-light" src="..\static\img\assets\gd_header_light.svg">
+                    <img class="title-img-game" src="..\static\img\assets\gd_game.svg">
+                    <img class="title-img-chang" src="..\static\img\assets\gd_changing .svg">
+                </div>
+            </div>
+            <div class="wt-row wt-row_size_m wt-row_justify_center wt-row-md_justify_start row_margin_top">
+                <div class="wt-col-4 wt-col_align-self_center wt-col-md-12">
+                    <span class="text-style text-md-title">Trusted by developers using</span>
+                </div>
+                <div class="wt-col-2 wt-col_align-self_center wt-col-md-4 img-in-main">
+                    <img src="../static/img/UnityTextLogo.svg" width="160px">
+                </div>
+                <div class="wt-col-2 wt-col_align-self_center wt-col-md-4 img-in-main">
+                    <img src="../static/img/UnrealTextLogo.svg" width="160px">
+                </div>
+            </div>
+        </div>
+        <div class="content-unlock-code">
+            <div class="wt-row wt-row_size_m margin-left-1 text-title-style">
+                <div class="wt-col-8 wt-col-md-12">
+                    <span class="text-style text-big">
+                        Unlock the code quality achievement
+                    </span>
+                </div>
+            </div>
+            <div class="wt-row wt-row_size_m wt-offset-top-48 wt-row_align-items_center margin-left-1">
+                <div class="wt-col-4 wt-col-md-6">
+                    <img src="../static/img/Code_Analysis.svg" width="80px">
+                    <div class="wt-row wt-row_size_m wt-offset-top-48 wt-offset-top-sm-24">
+                        <div class="wt-col-12">
+                            <span class="text-style">Code Analysis</span>
+                            <div class="wt-offset-top-48 wt-offset-top-sm-24">
+                                <span class="text-style font-norm">
+                                    Write safer & more efficient code with code analysis
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wt-col-4 wt-col-md-6">
+                    <img src="../static/img/Refactoring.svg" width="100px">
+                    <div class="wt-row wt-row_size_m wt-offset-top-48 wt-offset-top-sm-24">
+                        <div class="wt-col-12">
+                            <span class="text-style">Refactoring</span>
+                            <div class="wt-offset-top-48 wt-offset-top-sm-24">
+                                <span class="text-style font-norm">
+                                    Refactor your code base with point and click
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wt-col-4 wt-col-md-6 wt-offset-top-md-96">
+                    <img src="../static/img/Code_Generation.svg" width="100px">
+                    <div class="wt-row wt-row_size_m wt-offset-top-48 wt-offset-top-sm-24">
+                        <div class="wt-col-12">
+                            <span class="text-style">Code Generation</span>
+                            <div class="wt-offset-top-48 wt-offset-top-sm-24">
+                                <span class="text-style font-norm">
+                                    Avoid typing boilerplate code with code generation.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-ide">
+            <div class="margin-left-1 text-title-style">
+                <span class="text-style text-big">
+                    Get an IDE <br> to craft best games
+                </span>
+            </div>
+            <div class="flex-revers">
+                <div class="wt-row wt-row_size_m wt-offset-top-48 wt-row_align-items_stretch margin-left-1 img-absol-after">
+                    <div class="wt-col-3 wt-col-md-6 ide-border" id="unity" tabindex="0">
+                        <div class="img-all img-small-unity"></div>
+                        <div id="img-unity"></div>
+                        <div class="show-md-ide">
+                            <span class="text-style">Unity®<br> games</span>
+                        </div>
+                    </div>
+                    <div class="wt-col-3 wt-col-md-6 ide-border" id="unreal" tabindex="0">
+                        <div class="img-all img-small-unreal"></div>
+                        <div id="img-unreal"></div>
+                        <img class="img-unreal-bottom" src="../static/img/card/Stats.svg">
+                        <div class="show-md-ide">
+                            <span class="text-style">Unreal®<br> Engine games</span>
+                        </div>
+                    </div>
+                    <div class="wt-col-3 wt-col-md-6 ide-border wt-offset-top-md-48" id="mobile" tabindex="0">
+                        <div class="img-all img-small-mobile"></div>
+                        <div id="img-mobile"></div>
+                        <div class="show-md-ide">
+                            <span class="text-style">Mobile<br> games</span>
+                        </div>
+                    </div>
+                    <div class="wt-col-3 wt-col-md-6 ide-border wt-offset-top-md-48" id="casual" tabindex="0">
+                        <div class="img-all img-small-casual"></div>
+                        <div id="img-casual"></div>
+                        <div class="show-md-ide">
+                            <span class="text-style">Casual<br> games</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin-left-1 wt-offset-top-96 wt-offset-top-md-24 text-default">
+                    <span class="text-style font-norm">From Activision to Zynga, cross-platform mobile<br>
+                    games to desktop franchises and consoles –<br>
+                    JetBrains tools help you quickly develop and<br>
+                        maintain games in easy difficulty.</span>
+                </div>
+                <div class="margin-left-1 wt-offset-top-96 wt-offset-top-md-24 text-unity">
+                    <span class="text-style font-norm">For games on Unity®:</span>
+                    <div class="wt-row wt-row_size_m wt-offset-top-48">
+                        <div class="wt-col-4 wt-col-sm-6">
+                            <div class="img_text_float">
+                                <img src="../static/img/resharper_%23.png" width="60px">
+                            </div>
+                            <span class="text-style font-norm">ReSharper</span><br>
+                            <span class="text-style font-light">
+                            a productivity mining extension<br> Visual Studio.
+                        </span>
+                        </div>
+                        <div class="wt-col-4 wt-col-sm-6">
+                            <div class="img_text_float">
+                                <img src="../static/img/rider.png" width="60px">
+                            </div>
+                            <span class="text-style font-norm">Rider</span><br>
+                            <span class="text-style font-light">
+                            a cross-platform ?.NET IDE with C#<br> and Unity support ,
+                        </span>
+                        </div>
+                        <div class="wt-col-auto-fill"></div>
+                    </div>
+                </div>
+                <div class="margin-left-1 wt-offset-top-96 wt-offset-top-md-24 text-unreal">
+                    <span class="text-style font-norm">For games on Unreal® Engine:</span>
+                    <div class="wt-row wt-row_size_m wt-offset-top-48">
+                        <div class="wt-col-4 wt-col-sm-6">
+                            <div class="img_text_float">
+                                <img src="../static/img/CLion.png" width="60px">
+                            </div>
+                            <span class="text-style font-norm">CLion</span><br>
+                            <span class="text-style font-light">
+                            a cross-platform<br> C/C++ IDE
+                        </span>
+                        </div>
+                        <div class="wt-col-4 wt-col-sm-6">
+                            <div class="img_text_float">
+                                <img src="../static/img/resharper.png" width="60px">
+                            </div>
+                            <span class="text-style font-norm">ReSharper C++</span><br>
+                            <span class="text-style font-light">
+                            a productivity extension achievement<br> for Visual Studio for C++
+                        </span>
+                        </div>
+                        <div class="wt-col-auto-fill"></div>
+                    </div>
+                </div>
+                <div class="margin-left-1 wt-offset-top-96 wt-offset-top-md-24 text-mobile">
+                    <span class="text-style font-norm">For mobile games:</span>
+                    <div class="wt-row wt-row_size_m wt-offset-top-48">
+                        <div class="wt-col-4 wt-col-sm-6">
+                            <div class="img_text_float">
+                                <img src="../static/img/IntelliJ_IDEA.png" width="60px">
+                            </div>
+                            <span class="text-style font-norm">IntelliJ IDEA</span><br>
+                            <span class="text-style font-light">
+                            for Android development, including<br> Kotlin, an official Android supported<br> language
+                            </span>
+                        </div>
+                        <div class="wt-col-4 wt-col-sm-6">
+                                <div class="img_text_float">
+                                    <img src="../static/img/appcode.png" width="60px">
+                                </div>
+                                <span class="text-style font-norm">AppCode</span><br>
+                                <span class="text-style font-light">
+                                    for iOS/macOS development
+                                </span>
+                        </div>
+                        <div class="wt-col-auto-fill"></div>
+                    </div>
+                </div>
+                <div class="margin-left-1 wt-offset-top-96 wt-offset-top-md-24 text-casual">
+                    <span class="text-style font-norm">For games on Web technologies:</span>
+                    <div class="wt-row wt-row_size_m wt-offset-top-48">
+                        <div class="wt-col-4 wt-col-sm-6">
+                            <div class="img_text_float">
+                                <img src="../static/img/webstorm.png" width="60px">
+                            </div>
+                            <span class="text-style font-norm">WebStorm</span><br>
+                            <span class="text-style font-light">
+                            a productivity extension achievement<br> for Visual Studio for C++
+                        </span>
+                        </div>
+                        <div class="wt-col-auto-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="margin-left-1 text-title-style">
+                <div class="wt-row wt-row_size_m pos-revers">
+                    <div class="wt-col-10 wt-col-md-12">
+                        <span class="text-style">Are you using something different<br>
+                        to craft your games?</span>
+                        <div class="wt-offset-top-24">
+                            <span class="text-style font-norm">
+                                We've got more options and products to meet your needs.
+                                Filter and learn more <a>here</a>.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wt-col-2 wt-col-md-12 wt-offset-top-md-48">
+                        <img src="..\static\img\assets\gd_diffrent_chel.svg" width="150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-multy-play">
+            <div class=" text-title-style">
+                <img class="show-lg" src="..\static\img\Multiplayer_Teams.svg">
+                <div  class="show-md">
+                    <img src="..\static\img\assets\gd_team.svg">
+                    <div class="multy-div-text">
+                        <span class="text-style font-norm"><b>Productivity suite for</b><br>
+                            <span class="text-big multy-text">Multiplayer Team</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="wt-row wt-row_size_m margin-left-1 wt-offset-top-96 wt-offset-top-md-48">
+                <div class="wt-col-7 wt-col-md-12 wt-offset-top-md-0">
+                    <span class="text-style font-norm">Track everything in one place, build and emulate
+                            your games in many setups without having to do
+                            any of the usual sidequests, so you can easily review
+                            the code and make the process of creating glitchless
+                            games in your company simpler.</span>
+                </div>
+            </div>
+            <div class="margin-left-1 wt-offset-top-96">
+                <span class="text-style">Check out our team tools,<br>
+                    <span class="text-yellow">completely free</span> for small teams</span>
+            </div>
+            <div class="wt-row wt-row_size_m wt-offset-top-48 margin-left-1">
+                <div class="wt-col-4 wt-col-md-6 wt-offset-top-md-48">
+                    <div class="img_text_float">
+                        <img src="../static/img/teamcity_youtrack.png" width="60px">
+                    </div>
+                    <span class="text-style font-norm">TeamCity</span><br>
+                    <span class="text-style font-light">
+                        Continuous integration &<br> deployment
+                    </span>
+                    <a class="button" href="#">Learn More</a>
+                </div>
+                <div class="wt-col-4 wt-col-md-6 wt-offset-top-md-48">
+                    <div class="img_text_float">
+                        <img src="../static/img/teamcity_integr.png" width="60px">
+                    </div>
+                    <span class="text-style font-norm">TeamCity</span><br>
+                    <span class="text-style font-light">
+                        Continuous integration &<br> deployment
+                    </span>
+                    <a class="button" href="#">Learn More</a>
+                </div>
+                <div class="wt-col-4 wt-col-md-6 wt-offset-top-md-48">
+                    <div class="img_text_float">
+                        <img src="../static/img/teamcity_upsource.png" width="60px">
+                    </div>
+                    <span class="text-style font-norm">TeamCity</span><br>
+                    <span class="text-style font-light">
+                        Project analytics &<br> code review
+                    </span>
+                    <a class="button" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-ask-custom">
+            <div class="margin-left-1  text-title-style">
+                <div class="img-ask-our"></div>
+            </div>
+            <div class="wt-row wt-row_size_m margin-left-1 wt-offset-top-48 wt-offset-top-sm-12">
+                <div class="wt-col-6 wt-row_justify_start wt-col-md-12">
+                    <span class="text-style font-norm">
+                        4M+ developers from all over the open world trust
+                        JetBrains tools and use them in their everyday jobs.
+                    </span>
+                </div>
+            </div>
+
+            <div class="wt-row wt-row_size_m wt-offset-top-48 margin-left-1">
+                <div class="wt-col-4 wt-row_justify_start wt-col-md-6">
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/nintendo-mono.svg"></object>
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/valve.svg"></object>
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/blizzard-mono.svg"></object>
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/mojang-mono.svg"></object>
+                </div>
+                <div class="wt-col-4 wt-row_justify_start wt-col-md-6">
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/ubisoft-mono.svg"></object>
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/sega-mono.svg"></object>
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/bioware-mono.svg"></object>
+                    <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/epic-games-mono.svg"></object>
+                </div>
+                <div class="wt-col-4 wt-row_justify_start wt-col-md-12">
+                    <div class="wt-row wt-row_size_m">
+                        <div class="wt-col-md-6 wt-col-12">
+                            <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/naughtydog-mono.svg"></object>
+                            <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/square-enix-mono.svg"></object>
+                        </div>
+                        <div class="wt-col-md-6 wt-col-12">
+                            <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/bungie-mono.svg"></object>
+                            <object class="logo_custom" type="image/svg+xml" data="../static/img/logos/insomniac-games-mono.svg"></object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wt-row wt-row_size_m wt-offset-top-48 margin-left-1 margin-right-sm">
+                <div class="wt-col-4 wt-col-md-12 ">
+                    <span class="text-style font-norm">Using Rider to write C# makes me
+                        happy. I have never seen code
+                        refactoring tools that actually work -
+                        always without exception. It’s amazing
+                        when you can rely on it.</span>
+                    <div class="wt-offset-top-24 wt-offset-top-sm-12">
+                        <span class="text-style font-light">
+                            Joachim Ante,<br> Unity CTO & Founder
+                        </span>
+                    </div>
+                </div>
+                <div class="wt-col-4 wt-col-md-12 wt-offset-top-md-96 wt-offset-top-sm-48">
+                    <span class="text-style font-norm">We use TeamCity to build games for
+                        various platforms, in parallel, multiple
+                        times per day. The value we receive from
+                        the product, and the support from the
+                        dev team, are fantastic!</span>
+                    <div class="wt-offset-top-24 wt-offset-top-sm-12">
+                        <span class="text-style font-light">
+                            Oleg Gerovich,<br>Senior Software Engineer,<br>Wargaming Chicago-Baltimore
+                        </span>
+                    </div>
+                </div>
+                <div class="wt-col-4 wt-col-md-12 wt-offset-top-md-96 wt-offset-top-sm-48">
+                    <span class="text-style font-norm">An IDE can make or break a developer’s
+                        day. Both of these tools (CLion and
+                        Rider) help our team on a daily basis,
+                        allowing developers to perform their
+                        tasks quickly and efficiently, all the while
+                        seamlessly integrating with numerous
+                        parts of our pipeline.</span>
+                    <div class="wt-offset-top-24 wt-offset-top-sm-12">
+                        <span class="text-style font-light">
+                            Matthew Davey,<br>dotBunny
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="contact-content">
+        <div class="wt-container">
+            <div class="wt-row wt-row_size_m wt-row_justify_start">
+                <div class="wt-col-5 wt-col-md-12">
+                    <div class="bottom_beam">
+                        <img src="..\static\img\assets\gd_bottom_beam.svg">
+                    </div>
+                    <img class="connect_peop" src="..\static\img\assets\gd_connect_chel.svg">
+                </div>
+                <div class="wt-col-auto-fill wt-offset-top-96 margin-mg-connect contact-z-input wt-col-md-12">
+                    <span class="text-style text-big">Get in touch</span>
+                    <div class="wt-offset-top-24">
+                        <span class="font-light">Direct-message our team with any<br>
+                            questions you have about the products:</span>
+                    </div>
+                    <div class="wt-row wt-row_size_m wt-row_justify_start wt-offset-top-24">
+                        <div class="wt-col-6 wt-col-md-12">
+                            <input class="connect-input" placeholder="Your Name">
+                            <input class="connect-input" placeholder="Your Email">
+                            <input class="connect-input" placeholder="Product">
+                        </div>
+                        <div class="wt-col-6 wt-col-md-12">
+                            <textarea class="connect-input" placeholder="Comments" rows="6"></textarea>
+                        </div>
+                        <div class="wt-col-6 wt-col-md-12">
+                            <a class="button" href="#">Submit</a>
+                            <div class="wt-offset-top-48">
+                                <span class="text-style">Meet us GDC</span>
+                                <div class="wt-offset-top-24">
+                                        <span class="font-light">Fancy rushing our party? Meet us at
+                                            <a>Game Developers Conference (GDC),</a>
+                                            the world's largest professional game
+                                            industry event, and score some loot.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
 </body>
 </html>
